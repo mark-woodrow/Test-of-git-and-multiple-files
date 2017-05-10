@@ -15,7 +15,9 @@
 // strings in structures, the need to use strcpy()
 
 // Linked list code example
-// create a short ll
+// create a short ll.  Have to declare elements explicitly, as we're not using dynamic allocation
+// struct element element1, element2, element3, element4, element5
+// set them up as linked.  get a pointer to the head one.  set last link field to null.
 // traverse it and print the data
 // insert an element
 // delete an element
