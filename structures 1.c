@@ -91,40 +91,8 @@ int demoStructures() {
     // Lists
     
     // Linked lists
+   
     
-    
-    
-    
-    /*
-    struct item * headptr = NULL;
-    struct item first, second, third, last;
-    
-    
-    first.data = 2;
-    second.data = 7;
-    third.data = 1;
-    last.data = 8;
-    
-    
-    headptr = &first;
-    first.item_ptr = &second;
-    second.item_ptr = &third;
-    third.item_ptr = &last;
-    last.item_ptr = NULL;
-    
-    
-    // now to traverse the list
-    
-    
-    struct item * traverse_ptr = &first;
-    
-    
-    
-    while (traverse_ptr != NULL) {
-        printf("data item is %d\n", traverse_ptr->data);
-        traverse_ptr = traverse_ptr->item_ptr;      
-    }
-    */
     return (EXIT_SUCCESS);
 }
 

@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=MinGW-Windows
-CND_DLIB_EXT=dll
+CND_PLATFORM=GNU-Linux-x86
+CND_DLIB_EXT=so
 CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/argc\ and\ argv.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/simple\ files.o \
 	${OBJECTDIR}/structures\ 1.o \
 	${OBJECTDIR}/structures\ 2.o \
 	${OBJECTDIR}/the\ stack.o
@@ -60,11 +61,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 .NO_PARALLEL:${OBJECTDIR}/argc\ and\ argv.o
 ${OBJECTDIR}/argc\ and\ argv.o: argc\ and\ argv.c 
@@ -76,6 +77,12 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+.NO_PARALLEL:${OBJECTDIR}/simple\ files.o
+${OBJECTDIR}/simple\ files.o: simple\ files.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/simple\ files.o simple\ files.c
 
 .NO_PARALLEL:${OBJECTDIR}/structures\ 1.o
 ${OBJECTDIR}/structures\ 1.o: structures\ 1.c 
@@ -101,7 +108,7 @@ ${OBJECTDIR}/the\ stack.o: the\ stack.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files
 
 # Subprojects
 .clean-subprojects:

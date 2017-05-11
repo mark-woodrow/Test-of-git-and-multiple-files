@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Test of git and tutoring
+PROJECTNAME=Test-of-git-and-multiple-files
 
 # Active Configuration
 DEFAULTCONF=Debug
