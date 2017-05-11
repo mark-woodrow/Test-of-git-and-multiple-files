@@ -28,7 +28,5 @@
 
 
 
-// For a future lesson:  argc and argv
-// talk about arrays of char *
-// and demo prog for command-line arguments.
+
 
