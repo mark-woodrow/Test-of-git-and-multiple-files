@@ -20,7 +20,8 @@ int main(int argc, char** argv) {
     
     // Insert call code here
     
-    demoStructures();
+    //demoStructures();
+    demoStructures2();
     
     printf("Done.\n");
     return (EXIT_SUCCESS);

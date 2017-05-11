@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/argc\ and\ argv.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/simple\ files.o \
 	${OBJECTDIR}/structures\ 1.o \
 	${OBJECTDIR}/structures\ 2.o \
 	${OBJECTDIR}/the\ stack.o
@@ -76,6 +77,12 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+.NO_PARALLEL:${OBJECTDIR}/simple\ files.o
+${OBJECTDIR}/simple\ files.o: simple\ files.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/simple\ files.o simple\ files.c
 
 .NO_PARALLEL:${OBJECTDIR}/structures\ 1.o
 ${OBJECTDIR}/structures\ 1.o: structures\ 1.c 
