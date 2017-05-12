@@ -24,7 +24,10 @@
 
 void demoStructures2() {
 
-
+struct item { 
+    int data;
+    struct item * item_ptr;
+};
     struct item * headptr = NULL;
     struct item first, second, third, last;
 
