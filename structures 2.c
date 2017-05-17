@@ -1,33 +1,33 @@
 /**
  * structures 2.c
- * 
+ *
  * Opened 4th May 2017
- * 
+ *
  */
 
 #include <stdio.h>
 #include <stdbool.h>
 
-struct item { 
+struct item {
     int data;
     struct item * item_ptr;
 };
-   
-    struct playerStats { 
-        char playerName[128];
-        int strength;
-        int dexterity;
-        int wisdom;
-        int charisma;
-        int xp;
-        double gold;
-        int hp;
-        bool isPoisoned;
-        bool isCursed;
-        bool isBlessed;
-    };
-    
-    
+
+struct playerStats {
+    char playerName[128];
+    int strength;
+    int dexterity;
+    int wisdom;
+    int charisma;
+    int xp;
+    double gold;
+    int hp;
+    bool isPoisoned;
+    bool isCursed;
+    bool isBlessed;
+};
+
+
 // last time: introduced structures
 // example was D&D player attributes
 // Accessing elements with the dot operator
@@ -45,54 +45,64 @@ struct item {
 
 void demoStructures2() {
 
-struct item { 
-    int data;
-    struct item * item_ptr;
-};
-    
-    
+
+
+    // recap
+    // how is a structure declared?
+    // how are items accessed?
+
+    // how are items accessed via a pointer?
+
+    struct item {
+        int data;
+        struct item * item_ptr;
+    };
+
+
     // declared like this
     struct playerStats firstPlayer;
     struct playerStats secondPlayer;
-    
+
     // and values assigned like this
-        
+
     firstPlayer.strength = 17;
     firstPlayer.dexterity = 10;
     firstPlayer.wisdom = 10;
     firstPlayer.charisma = 10;
     firstPlayer.xp = 0;
     firstPlayer.gold = 0.1;
-    
+
     // strings in structures
     // can we initialise like this? -- no
     firstPlayer.playerName = "Mark";
     strcpy(firstPlayer.playerName, "Mark");
-    
-    
+
+
     // if we wanted to introduce a player race, how would we do it?
-    
+
     // Ans: with an enum
-    
-    enum race_type {HUMAN, DWARF, ELF, OTHER};
-    
+
+    enum race_type {
+        HUMAN, DWARF, ELF, OTHER
+    };
+
     struct playerStatsRevised {
         int wisdom;
         int dexterity;
         int charisma;
-        race_type race; 
+        race_type race;
     };
-    
+
     // and set it
-    
+
     playerStatsRevised playerOne;
     playerOne.charisma = 18;
     playerOne.race = HUMAN;
-    
-    
+
+
     // ============================
-    
-    
+
+
     // create a simple linked list
     struct item * headptr = NULL;
     struct item first, second, third, fourth, last;
