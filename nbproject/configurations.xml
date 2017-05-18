@@ -52,6 +52,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="ANSI sequences.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="argc and argv.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
@@ -85,6 +87,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="ANSI sequences.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="argc and argv.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">

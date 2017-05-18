@@ -74,7 +74,7 @@ void demoStructures2() {
 
     // strings in structures
     // can we initialise like this? -- no
-    firstPlayer.playerName = "Mark";
+    //firstPlayer.playerName = "Mark";
     strcpy(firstPlayer.playerName, "Mark");
 
 
@@ -90,12 +90,12 @@ void demoStructures2() {
         int wisdom;
         int dexterity;
         int charisma;
-        race_type race;
+        enum race_type race;
     };
 
     // and set it
 
-    playerStatsRevised playerOne;
+    struct playerStatsRevised playerOne;
     playerOne.charisma = 18;
     playerOne.race = HUMAN;
 

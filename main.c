@@ -1,7 +1,7 @@
-/* 
+/*
  * This is the new test of git, and having multiple source files,
  * each one to be the basis of a tutoring lesson
- * 
+ *
  * File:   main.c
  * Author: mark.woodrow
  *
@@ -12,17 +12,18 @@
 #include <stdlib.h>
 
 /*
- * 
+ *
  */
 int main(int argc, char** argv) {
 
     printf("Container for C Tutoring lessons\n\n");
-    
+
     // Insert call code here
-    
+
     //demoStructures();
-    fileDemo();
-    
+    //fileDemo();
+    ansiDemo();
+
     printf("Done.\n");
     return (EXIT_SUCCESS);
 }
