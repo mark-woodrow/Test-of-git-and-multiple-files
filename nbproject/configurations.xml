@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>ANSI sequences.c</itemPath>
       <itemPath>argc and argv.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>simple files.c</itemPath>
