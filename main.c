@@ -22,7 +22,10 @@ int main(int argc, char** argv) {
 
     //demoStructures();
     //fileDemo();
-    ansiDemo();
+    
+    //ansiDemo();
+    randomWalk();
+    //delayDemo();
 
     printf("Done.\n");
     return (EXIT_SUCCESS);
