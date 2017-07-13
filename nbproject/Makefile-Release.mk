@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/ANSI\ sequences.o \
 	${OBJECTDIR}/argc\ and\ argv.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/simple\ files.o \
@@ -66,6 +67,12 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+.NO_PARALLEL:${OBJECTDIR}/ANSI\ sequences.o
+${OBJECTDIR}/ANSI\ sequences.o: ANSI\ sequences.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ANSI\ sequences.o ANSI\ sequences.c
 
 .NO_PARALLEL:${OBJECTDIR}/argc\ and\ argv.o
 ${OBJECTDIR}/argc\ and\ argv.o: argc\ and\ argv.c 

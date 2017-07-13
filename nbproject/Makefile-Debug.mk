@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux-x86
-CND_DLIB_EXT=so
+CND_PLATFORM=MinGW-Windows
+CND_DLIB_EXT=dll
 CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -62,11 +62,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 .NO_PARALLEL:${OBJECTDIR}/ANSI\ sequences.o
 ${OBJECTDIR}/ANSI\ sequences.o: ANSI\ sequences.c 
@@ -115,7 +115,7 @@ ${OBJECTDIR}/the\ stack.o: the\ stack.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test-of-git-and-multiple-files
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/test_of_git_and_tutoring.exe
 
 # Subprojects
 .clean-subprojects:
